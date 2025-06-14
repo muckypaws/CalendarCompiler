@@ -46,7 +46,9 @@
     "svg_dir": "./calendars",
     "export_pdf": true,
     "export_png": false,
-    "export_jpg": false
+    "export_jpg": false,
+    "export_validation_csv": true,
+    "validation_dir": "output_validation"
   },
   "OpenOnCompletion": false,
   "days_of_week": [

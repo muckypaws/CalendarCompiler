@@ -10,6 +10,7 @@ import json
 import re
 import calendar
 import textwrap
+import csv
 from datetime import datetime
 from datetime import date, timedelta
 from dotenv import load_dotenv
@@ -350,19 +351,39 @@ def build_full_calendar_grid(year, month, week_start=0):
     # Make it a list-of-lists (rows of 7)
     return [grid[i*7:(i+1)*7] for i in range(6)]
 
-def export_holiday_validation_file(settings: dict, holiday_data: dict):
-    """Export the fully merged holiday data to a validation file."""
-    year = settings.get("year", "unknown")
-    output_file = f"holiday_export_{year}.csv"
+import csv
+import os
 
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write("Date,Label,Colour\n")
+def export_holiday_validation_file(settings: dict, holiday_data: dict):
+    """
+    Export the fully merged holiday data to a validation CSV file.
+    
+    Controlled by settings.json output.export_validation_csv parameter.
+    """
+    output_config = settings.get("output", {})
+    export_enabled = output_config.get("export_validation_csv", False)
+
+    if not export_enabled:
+        print("Holiday validation CSV export is disabled.")
+        return
+
+    year = settings.get("year", "unknown")
+    validation_dir = output_config.get("validation_dir", ".")
+    os.makedirs(validation_dir, exist_ok=True)
+
+    output_file = os.path.join(validation_dir, f"holiday_export_{year}.csv")
+
+    with open(output_file, mode="w", encoding="utf-8", newline='') as f:
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+        writer.writerow(["Date", "Label", "Colour"])
         for date_key in sorted(holiday_data.keys()):
             entries = holiday_data[date_key].get("entries", [])
             for entry in entries:
-                f.write(f"{date_key},{entry['label']},{entry['colour']}\n")
+                label = entry['label'].replace('\n', '; ')  # flatten embedded newlines
+                writer.writerow([date_key, label, entry['colour']])
 
     print(f"Holiday export file written: {output_file}")
+
 
 def update_year_key(year, base):
     """

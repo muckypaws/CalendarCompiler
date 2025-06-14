@@ -417,3 +417,4 @@ __pycache__
 *.zip
 workfiles/
 holiday_*
+output*/
