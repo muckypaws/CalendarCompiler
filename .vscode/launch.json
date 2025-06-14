@@ -13,7 +13,7 @@
             "program": "${workspaceFolder}/CalendarCompiler.py",
             "console": "integratedTerminal",
             //"args": ["--year","2026","--artwork","artwork/Amstrad","--exportto","output_pdfs/Amstrad"]
-            "args": ["--year","2026","--artwork","artwork/BobThePolarBear","--exportto","output_pdfs/BobThePolarBear"]
+            "args": ["--year","2026","--artwork","artwork/Amstrad","--exportto","output_pdfs/Amstrad"]
         }
     ]
 }

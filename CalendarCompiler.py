@@ -8,11 +8,18 @@ import json
 import argparse
 import os
 import sys
+import platform
 from datetime import datetime
 from modules import svg_calendar
-from modules.helpers import load_json, save_json, merge_holiday_data
-from modules.helpers import load_settings, get_api_key, is_enabled
-from modules.helpers import export_holiday_validation_file
+from modules.helpers import (
+    load_json,
+    save_json,
+    merge_holiday_data,
+    load_settings,
+    get_api_key,
+    is_enabled,
+    export_holiday_validation_file
+)
 from modules import calendar_events
 from modules import api_connectors
 from modules import export_calander
@@ -297,8 +304,6 @@ def load_event_data_from_options(settings, year):
     
     return holiday_data
 
-
-
 def compile_calendar(settings):
     """Compile the Calendar based on user options."""
     # Handle export formats based on config
@@ -312,6 +317,79 @@ def compile_calendar(settings):
 
     if output_settings.get("export_jpg", False):
         export_calander.export_calendar_jpgs(settings)
+
+def clear_screen():
+    """Clear the terminal screen in a cross-platform safe way."""
+    if platform.system() == "Windows":
+        os.system('cls')
+    else:
+        os.system('clear')
+
+
+def display_banner(settings: dict = None):
+    """
+    Display program banner and optionally show current configuration summary.
+
+    Args:
+        settings (dict, optional): Loaded configuration dictionary to summarise key options.
+    """
+    clear_screen()
+
+    banner = r"""
+   █████████            ████                          █████                    
+  ███░░░░░███          ░░███                         ░░███                     
+ ███     ░░░   ██████   ░███   ██████  ████████    ███████   ██████   ████████ 
+░███          ░░░░░███  ░███  ███░░███░░███░░███  ███░░███  ░░░░░███ ░░███░░███
+░███           ███████  ░███ ░███████  ░███ ░███ ░███ ░███   ███████  ░███ ░░░ 
+░░███     ███ ███░░███  ░███ ░███░░░   ░███ ░███ ░███ ░███  ███░░███  ░███     
+ ░░█████████ ░░████████ █████░░██████  ████ █████░░████████░░████████ █████    
+  ░░░░░░░░░   ░░░░░░░░ ░░░░░  ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░  ░░░░░░░░ ░░░░░     
+                                                                               
+                                                                               
+                                                                               
+   █████████                                      ███  ████                    
+  ███░░░░░███                                    ░░░  ░░███                    
+ ███     ░░░   ██████  █████████████   ████████  ████  ░███   ██████  ████████ 
+░███          ███░░███░░███░░███░░███ ░░███░░███░░███  ░███  ███░░███░░███░░███
+░███         ░███ ░███ ░███ ░███ ░███  ░███ ░███ ░███  ░███ ░███████  ░███ ░░░ 
+░░███     ███░███ ░███ ░███ ░███ ░███  ░███ ░███ ░███  ░███ ░███░░░   ░███     
+ ░░█████████ ░░██████  █████░███ █████ ░███████  █████ █████░░██████  █████    
+  ░░░░░░░░░   ░░░░░░  ░░░░░ ░░░ ░░░░░  ░███░░░  ░░░░░ ░░░░░  ░░░░░░  ░░░░░     
+                                       ░███                                    
+                                       █████                                   
+                                      ░░░░░                                    
+    """
+    print(banner)
+    print("\nKernel v0.2 Calendar Compiler - https://github.com/muckypaws/CalendarCompiler\n")
+
+    if settings:
+        print("🗓 Year:", settings.get("year", "<not set>"))
+        print("🌐 Local Country:", settings.get("local_country", "<not set>"))
+
+        print("\nIncluded Days:")
+        intl = settings.get("include_days", {}).get("international", {})
+        print(f"  - International (Official: {'✔' if intl.get('official') else '✘'} "
+              f"Semi-Official: {'✔' if intl.get('semi_official') else '✘'} "
+              f"Fun: {'✔' if intl.get('fun') else '✘'})")
+
+        for flag in ["retro", "religious", "uk_holidays", "country_list", "custom_events", "cultural"]:
+            enabled = settings.get("include_days", {}).get(flag, False)
+            print(f"  - {flag.replace('_', ' ').capitalize()}: {'✔' if enabled else '✘'}")
+
+        country_list = settings.get("include_country_list", {}).get("countries", [])
+        print("\nCountries Selected:", ", ".join(country_list) if country_list else "(none)")
+
+        output = settings.get("output", {})
+        print("\nExport Output:")
+        for fmt in ["pdf", "png", "jpg"]:
+            export_key = f"export_{fmt}"
+            dir_key = f"{fmt}_dir"
+            if output.get(export_key, False):
+                print(f"  - {fmt.upper()}: {output.get(dir_key, '<not set>')}")
+            else:
+                print(f"  - {fmt.upper()}: (disabled)")
+
+        print()
 
 def main():
     """
@@ -328,6 +406,8 @@ def main():
     settings = load_settings()
     settings = update_settings_with_cli(settings, args)
     year = settings.get("year", datetime.now().year)
+
+    display_banner(settings)
 
 
     if args.compileonly and args.svgonly:
