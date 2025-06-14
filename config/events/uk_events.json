@@ -1,0 +1,9 @@
+{
+  "01-25": {"label": "Burns Night (Scotland)", "colour": "blue"},
+  "02-14": {"label": "Valentine's Day", "colour": "pink"},
+  "03-01": {"label": "St David's Day (Wales)", "colour": "#D28800"},
+  "04-23": {"label": "St George's Day (England)", "colour": "red"},
+  "11-05": {"label": "Guy Fawkes Night", "colour": "red"},
+  "11-11": {"label": "Armistice Day", "colour": "red"},
+  "11-30": {"label": "St Andrew's Day (Scotland)", "colour": "blue"}
+}

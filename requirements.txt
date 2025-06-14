@@ -1,0 +1,7 @@
+CairoSVG>=2.8.2
+holidays>=0.74
+Pillow>=11.2.1
+reportlab>=4.4.1
+python-dateutil>=2.9.0
+requests>=2.32.3
+python-dotenv>=1.1.0

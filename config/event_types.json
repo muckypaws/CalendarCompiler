@@ -1,0 +1,8 @@
+{
+    "UK Public Holiday": "red",
+    "French Public Holiday": "blue",
+    "German Public Holiday": "black",
+    "Religious Holiday": "green",
+    "Retro Computing Event": "purple",
+    "Custom Event": "#D28800"
+}

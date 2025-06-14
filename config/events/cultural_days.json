@@ -1,0 +1,12 @@
+{
+  "RO": {
+    "02-24": { "label": "Dragobete (RO)", "colour": "mediumvioletred" },
+    "03-01": { "label": "Mărțișor (RO)", "colour": "pink" },
+    "06-26": { "label": "Flag Day (RO)", "colour": "red" },
+    "07-29": { "label": "National Anthem Day (RO)", "colour": "red" }
+  },
+  "ALL": {
+    "10-31": { "label": "Halloween", "colour": "orange" },
+    "12-31": { "label": "New Year's Eve", "colour": "blue" }
+  }
+}

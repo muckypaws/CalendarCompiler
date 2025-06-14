@@ -1,0 +1,222 @@
+{
+  "2027-01-05": {
+    "label": "Twelfth Night",
+    "colour": "purple"
+  },
+  "2027-01-06": {
+    "label": "Epiphany\nIsra and Mi'raj",
+    "colour": "purple"
+  },
+  "2027-01-07": {
+    "label": "Orthodox Christmas Day",
+    "colour": "purple"
+  },
+  "2027-01-14": {
+    "label": "Orthodox New Year",
+    "colour": "purple"
+  },
+  "2027-01-23": {
+    "label": "Tu B'Shevat (Arbor Day)",
+    "colour": "#D28800"
+  },
+  "2027-02-08": {
+    "label": "Ramadan Start",
+    "colour": "green"
+  },
+  "2027-02-09": {
+    "label": "Carnival / Shrove Tuesday / Pancake Day",
+    "colour": "purple"
+  },
+  "2027-02-10": {
+    "label": "Carnival / Ash Wednesday",
+    "colour": "purple"
+  },
+  "2027-03-01": {
+    "label": "St. David's Day",
+    "colour": "purple"
+  },
+  "2027-03-05": {
+    "label": "Lailat al-Qadr",
+    "colour": "green"
+  },
+  "2027-03-10": {
+    "label": "Eid ul Fitr",
+    "colour": "green"
+  },
+  "2027-03-17": {
+    "label": "St Patrick's Day",
+    "colour": "purple"
+  },
+  "2027-03-21": {
+    "label": "Palm Sunday",
+    "colour": "purple"
+  },
+  "2027-03-23": {
+    "label": "Purim",
+    "colour": "#D28800"
+  },
+  "2027-03-25": {
+    "label": "Maundy Thursday",
+    "colour": "purple"
+  },
+  "2027-03-26": {
+    "label": "Good Friday",
+    "colour": "purple"
+  },
+  "2027-03-27": {
+    "label": "Holy Saturday",
+    "colour": "purple"
+  },
+  "2027-03-28": {
+    "label": "Easter Sunday",
+    "colour": "purple"
+  },
+  "2027-03-29": {
+    "label": "Easter Monday",
+    "colour": "purple"
+  },
+  "2027-04-22": {
+    "label": "First day of Passover",
+    "colour": "#D28800"
+  },
+  "2027-04-23": {
+    "label": "St. George's Day",
+    "colour": "purple"
+  },
+  "2027-04-29": {
+    "label": "Last day of Passover",
+    "colour": "#D28800"
+  },
+  "2027-04-30": {
+    "label": "Orthodox Good Friday",
+    "colour": "purple"
+  },
+  "2027-05-01": {
+    "label": "Orthodox Holy Saturday",
+    "colour": "purple"
+  },
+  "2027-05-02": {
+    "label": "Orthodox Easter",
+    "colour": "purple"
+  },
+  "2027-05-03": {
+    "label": "Orthodox Easter Monday",
+    "colour": "purple"
+  },
+  "2027-05-04": {
+    "label": "Yom HaShoah",
+    "colour": "#D28800"
+  },
+  "2027-05-06": {
+    "label": "Ascension Day",
+    "colour": "purple"
+  },
+  "2027-05-12": {
+    "label": "Yom HaAtzmaut",
+    "colour": "#D28800"
+  },
+  "2027-05-16": {
+    "label": "Pentecost",
+    "colour": "purple"
+  },
+  "2027-05-17": {
+    "label": "Whit Monday\nEid al-Adha",
+    "colour": "purple"
+  },
+  "2027-05-23": {
+    "label": "Trinity Sunday",
+    "colour": "purple"
+  },
+  "2027-05-25": {
+    "label": "Lag B'Omer",
+    "colour": "#D28800"
+  },
+  "2027-05-27": {
+    "label": "Corpus Christi",
+    "colour": "purple"
+  },
+  "2027-06-06": {
+    "label": "Muharram/Islamic New Year",
+    "colour": "green"
+  },
+  "2027-06-11": {
+    "label": "Shavuot",
+    "colour": "#D28800"
+  },
+  "2027-06-15": {
+    "label": "Ashura",
+    "colour": "green"
+  },
+  "2027-08-12": {
+    "label": "Tisha B'Av",
+    "colour": "#D28800"
+  },
+  "2027-08-15": {
+    "label": "Assumption of Mary\nMilad un Nabi (Mawlid)",
+    "colour": "purple"
+  },
+  "2027-08-25": {
+    "label": "Janmashtami (Smarta)",
+    "colour": "#AD9200"
+  },
+  "2027-10-02": {
+    "label": "Rosh Hashana",
+    "colour": "#D28800"
+  },
+  "2027-10-04": {
+    "label": "Feast of St Francis of Assisi",
+    "colour": "purple"
+  },
+  "2027-10-11": {
+    "label": "Yom Kippur",
+    "colour": "#D28800"
+  },
+  "2027-10-16": {
+    "label": "First day of Sukkot",
+    "colour": "#D28800"
+  },
+  "2027-10-22": {
+    "label": "Hoshana Rabbah",
+    "colour": "#D28800"
+  },
+  "2027-10-23": {
+    "label": "Shemini Atzeret",
+    "colour": "#D28800"
+  },
+  "2027-10-24": {
+    "label": "Simchat Torah",
+    "colour": "#D28800"
+  },
+  "2027-11-01": {
+    "label": "All Saints' Day",
+    "colour": "purple"
+  },
+  "2027-11-02": {
+    "label": "All Souls' Day",
+    "colour": "purple"
+  },
+  "2027-11-28": {
+    "label": "First Sunday of Advent",
+    "colour": "purple"
+  },
+  "2027-11-30": {
+    "label": "St Andrew's Day",
+    "colour": "purple"
+  },
+  "2027-12-08": {
+    "label": "Feast of the Immaculate Conception",
+    "colour": "purple"
+  },
+  "2027-12-24": {
+    "label": "Christmas Eve",
+    "colour": "purple"
+  },
+  "2027-12-25": {
+    "label": "First Day of Hanukkah\nChristmas Day",
+    "colour": "#D28800"
+  },
+  "2027-12-26": {
+    "label": "Isra and Mi'raj",
+    "colour": "green"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "01-26": {"label": "Australia Day", "colour": "green"},
+    "02-02": {"label": "Groundhog Day", "colour": "goldenrod"},
+    "02-14": {"label": "Valentine's Day", "colour": "pink"},
+    "05-05": {"label": "Cinco de Mayo", "colour": "green"},
+    "07-04": {"label": "Independence Day (US)", "colour": "red"},
+    "09-02": {"label": "VJ Day (Victory over Japan)", "colour": "red"},
+    "11-05": {"label": "Guy Fawkes Day", "colour": "red"},
+    "11-11": {"label": "Remembrance Day", "colour": "red"},
+    "11-27": {"label": "Black Friday", "colour": "black"},
+    "12-26": {"label": "Boxing Day", "colour": "red"},
+    "12-24": {"label": "Christmas Eve", "colour": "red"},
+    "12-25": {"label": "Christmas Day", "colour": "red"},
+    "12-31": {"label": "New Year's Eve", "colour": "red"},
+    "02-29": {"label": "Leap Day", "colour": "blue"}
+}

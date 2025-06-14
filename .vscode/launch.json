@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/CalendarCompiler.py",
+            "console": "integratedTerminal",
+            //"args": ["--year","2026","--artwork","artwork/Amstrad","--exportto","output_pdfs/Amstrad"]
+            "args": ["--year","2026","--artwork","artwork/BobThePolarBear","--exportto","output_pdfs/BobThePolarBear"]
+        }
+    ]
+}

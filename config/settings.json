@@ -1,0 +1,99 @@
+{
+  "year" : 2026,
+  "scale_factor": 0.95,
+  "local_country": "GB",
+  "include_days": {
+    "international": {
+      "official": true,
+      "semi_official": true,
+      "fun": true
+    },
+    "retro": true,
+    "religious": true,
+    "uk_holidays": true,
+    "country_list": true,
+    "custom_events": true,
+    "cultural": true
+  },
+    "include_country_list": {
+    "countries": ["FR", "ES", "DE", "PL", "TR", "RO", "NL", "AT", "AU"]
+  },
+  "merge_identical_holidays": true,
+  "art_files": {
+    "cleanup": true,
+    "artwork_folder": "./artwork/Amstrad",
+    "front_cover": "cover_front.png",
+    "back_cover": "cover_back.png",
+    "monthly_spreads": [
+        "art_01.png",
+        "art_02.png",
+        "art_03.png",
+        "art_04.png",
+        "art_05.png",
+        "art_06.png",
+        "art_07.png",
+        "art_08.png",
+        "art_09.png",
+        "art_10.png",
+        "art_11.png",
+        "art_12.png"
+    ]
+  },
+  "output": {
+    "pdf_dir": "output_pdfs",
+    "png_dir": "output_pngs",
+    "jpg_dir": "output_jpgs",
+    "svg_dir": "./calendars",
+    "export_pdf": true,
+    "export_png": false,
+    "export_jpg": false
+  },
+  "OpenOnCompletion": false,
+  "days_of_week": [
+    {"label": "Monday",    "font": "Arial", "fontsize": 16, "weight": "bold", "colour": "#ffffff"},
+    {"label": "Tuesday",   "font": "Arial", "fontsize": 16, "weight": "bold", "colour": "#ffffff"},
+    {"label": "Wednesday", "font": "Arial", "fontsize": 16, "weight": "bold", "colour": "#ffffff"},
+    {"label": "Thursday",  "font": "Arial", "fontsize": 16, "weight": "bold", "colour": "#ffffff"},
+    {"label": "Friday",    "font": "Arial", "fontsize": 16, "weight": "bold", "colour": "#ffffff"},
+    {"label": "Saturday",  "font": "Arial", "fontsize": 16, "weight": "bold", "colour": "#0099ff"},
+    {"label": "Sunday",    "font": "Arial", "fontsize": 16, "weight": "bold", "colour": "#ff0000"}
+  ],
+  "weekday_box_colour": "#080808",
+  "invalid_cell_colour": "#dddddd",
+  "weekend_colours": {
+    "saturday": "#d3f5ff",
+    "sunday": "#d3f5ff"
+  },
+  "day_number": {
+    "font": "Arial",
+    "fontsize": 14,
+    "weight": "bold",
+    "colour": "#000000"
+  },
+  "event_text": {
+    "font": "Arial",
+    "fontsize": 8,
+    "weight": "normal",
+    "colour": "#000000"
+  },
+  "month_header": {
+    "font": "Arial",
+    "fontsize": 28,
+    "weight": "bold",
+    "colour": "#000000"
+  },
+    "pdf_metadata": {
+    "title": "Calendar",
+    "author": "Jason Brooks - www.muckypaws.com",
+    "subject": "Calendar Generator by Jason Brooks, https://github.com/muckypaws/CalendarCompiler",
+    "keywords": "calendar, svg, holidays, printable"
+  },
+    "branding": {
+    "show_branding": true,
+    "show_page_numbers": true,
+    "branding_text": "Generated with Calendar Compiler V0.1",
+    "branding_url": "https://github.com/muckypaws/CalendarCompiler"
+  },
+
+  "api_key": "USE_ENVIRONMENT"
+}

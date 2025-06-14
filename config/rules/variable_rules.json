@@ -1,0 +1,34 @@
+{
+  "GB": {
+    "mothers_day": "mothering_sunday",
+    "fathers_day": "third_sunday_june",
+    "yorkshire_pudding_day": "first_sunday_february",
+    "christian": true,
+    "moveable_cultural": {
+      "remembrance_sunday": true
+    }
+  },
+  "US": {
+    "mothers_day": "second_sunday_may",
+    "fathers_day": "third_sunday_june",
+    "christian": true
+  },
+  "AU": {
+    "mothers_day": "second_sunday_may",
+    "fathers_day": "first_sunday_september",
+    "christian": true
+  },
+  "DE": {
+    "fathers_day": "ascension_day",
+    "christian": true,
+    "moveable_cultural": {
+      "volkstrauertag": true
+    }
+  },
+  "RO": {
+    "moveable_cultural": {
+      "florii": true
+    }
+  }
+
+}

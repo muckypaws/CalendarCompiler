@@ -1,0 +1,63 @@
+{
+    "01-12": {"label": "Sinclair QL Launch (1984)", "colour": "blue"},
+    "01-15": {"label": "ZX Spectrum 128K UK Release (1986)", "colour": "blue"},
+    "01-21": {"label": "Paul Allen's Birthday (1953)", "colour": "purple"},
+    "01-24": {"label": "Apple Macintosh Launch (1984)", "colour": "grey"},
+    "01-29": {"label": "Sinclair ZX80 Launch (1980)", "colour": "blue"},
+    "02-01": {"label": "Oric Atmos Launch (1984)\nNEC PC-6001 Launch (1981)", "colour": "blue"},
+    "02-24": {"label": "Steve Jobs's Birthday (1955)", "colour": "purple"},
+    "03-01": {"label": "Acorn Atom Launch (1980)\nOric-1 Launch (1983)", "colour": "blue"},
+    "03-05": {"label": "Sinclair ZX81 Launch (1981)", "colour": "blue"},
+    "03-24": {"label": "Alan Sugar's Birthday (1947)", "colour": "purple"},
+    "03-31": {"label": "Jay Miner's Birthday (1932)", "colour": "purple"},
+    "04-01": {"label": "Jack Tramiel's Birthday (1928)\nMemotech MTX500 Launch (1984)", "colour": "purple"},
+    "04-11": {"label": "Amstrad CPC 464 Launch (1984)", "colour": "blue"},
+    "04-23": {"label": "ZX Spectrum 48K Launch (1982)", "colour": "blue"},
+    "05-01": {"label": "Amstrad CPC 664 Release (1985)", "colour": "blue"},
+    "05-19": {"label": "Gary Kildall's Birthday (1942)\nHermann Hauser's Birthday (1948)", "colour": "purple"},
+    "06-01": {
+        "label": "Apple II Launch (1977)\nCommodore C16 Launch (1984)\nCommodore Plus/4 Launch (1984)\nMSX2 Standard Launch (1985)\nNewBrain Launch (1981)\nTI-99/4A Launch (1981)\nMattel Aquarius Launch (1983)\nVTech Laser 200 / Salora Fellow Launch (1983)",
+        "colour": "blue"
+    },
+    "06-15": {"label": "Tatung Einstein Release (1984)", "colour": "blue"},
+    "06-25": {"label": "MSX1 Standard Launch (1983)", "colour": "blue"},
+    "06-30": {"label": "Apple IIc Launch (1984)", "colour": "blue"},
+    "07-01": {
+        "label": "Atari 400 Release (1979)\nAtari 800 Release (1979)\nCommodore VIC-20 UK Launch (1981)\nSharp MZ-80K Launch (1979)\nTimex Sinclair 1000 Release (1982)\nTRS-80 Color Computer Launch (1980)\nTRS-80 Model III Launch (1980)",
+        "colour": "blue"
+    },
+    "07-13": {"label": "Steve Wozniak's Birthday (1950)\nHermann Hauser's Birthday (1948)", "colour": "purple"},
+    "07-15": {"label": "Timex Sinclair 1500 Launch (1983)\nTRS-80 CoCo 3 Launch (1986)", "colour": "blue"},
+    "07-30": {"label": "Sir Clive Sinclair's Birthday (1940)", "colour": "purple"},
+    "08-01": {
+        "label": "Acorn Electron Launch (1983)\nAmstrad CPC 6128 Launch (1985)\nDragon 32 Release (1982)\nTandy Color Computer 2 Launch (1983)",
+        "colour": "blue"
+    },
+    "08-03": {"label": "TRS-80 Model I Release (1977)", "colour": "blue"},
+    "08-12": {"label": "Commodore 64 Launch (1982)", "colour": "blue"},
+    "09-01": {
+        "label": "Camputers Lynx Launch (1983)\nEnterprise 64/128 Release (1985)\nJupiter Ace Launch (1982)\nOsborne 1 Launch (1981)\nSpectravideo SV-328 Launch (1983)",
+        "colour": "blue"
+    },
+    "11-25": {"label": "Chuck Peddle's Birthday (1937)", "colour": "purple"},
+    "10-01": {
+        "label": "Coleco Adam Launch (1983)\nCommodore PET 2001 Launch (1977)\nZX Spectrum+ Launch (1984)",
+        "colour": "blue"
+    },
+    "10-07": {"label": "Chris Curry's Birthday (1946)", "colour": "purple"},
+    "10-10": {"label": "MSX2 Standard Launch (1985)", "colour": "blue"},
+
+    "10-28": {"label": "Bill Gates's Birthday (1955)", "colour": "purple"},
+    "11-01": {
+        "label": "Atari 800XL Release (1983)\nDragon 64 Release (1983)\nTimex Sinclair 2068 Launch (1983)\nNEC PC-8801 Launch (1981)\nSharp X1 Launch (1982)",
+        "colour": "blue"
+    },
+    "12-01": {
+        "label": "BBC Micro B Release (1981)\nFederico Faggin's Birthday (1941)\nSAM Coupé Release (1989)\nSord M5 Launch (1982)",
+        "colour": "blue"
+    },
+    "12-10": {"label": "Atari 130XE Release (1985)", "colour": "blue"},
+    "12-20": {"label": "Atari XEGS Release (1987)", "colour": "blue"},
+    "12-28": {"label": "William Lowe's Birthday (1941)", "colour": "purple"},
+    "12-30": {"label": "MSX2+ Machines Release (1988)", "colour": "blue"}
+}
