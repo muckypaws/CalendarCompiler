@@ -10,6 +10,7 @@ import os
 import sys
 import platform
 from datetime import datetime
+from time import sleep
 from modules import svg_calendar
 from modules.helpers import (
     load_json,
@@ -255,7 +256,7 @@ def load_event_data_from_options(settings, year):
 
     # Load Religious holidays (Calendarific API)
     if is_enabled(settings, "religious"):
-        cache_path = f"./config/calendarific_multifaith_{year}.json"
+        cache_path = f"config/events/calendarific_multifaith_{year}.json"
         try:
             all_faiths = load_json(cache_path)
             print(f"Loaded multi-faith holidays from cache: {cache_path}")
@@ -362,8 +363,9 @@ def display_banner(settings: dict = None):
     print(banner)
     print("\nKernel v0.2 Calendar Compiler - https://github.com/muckypaws/CalendarCompiler\n")
 
+    sleep(1)
     if settings:
-        print("🗓 Year:", settings.get("year", "<not set>"))
+        print("🗓  Year:", settings.get("year", "<not set>"))
         print("🌐 Local Country:", settings.get("local_country", "<not set>"))
 
         print("\nIncluded Days:")
@@ -390,6 +392,7 @@ def display_banner(settings: dict = None):
                 print(f"  - {fmt.upper()}: (disabled)")
 
         print()
+        sleep(2)
 
 def main():
     """
@@ -417,6 +420,10 @@ def main():
     # Load all holiday event data based on user config
     holiday_data = load_event_data_from_options(settings, year)
 
+    # Export Generated Data for user validation
+    # Useful for checking dates and config.
+    export_holiday_validation_file(settings, holiday_data)
+
     # Generate SVG Calendar
     if not args.compileonly:
         generate_all_svgs(settings, holiday_data)
@@ -428,9 +435,6 @@ def main():
         compile_calendar(settings)
     else:
         print("Calendar NOT Compiled as user requested SVG Generation ONLY")
-
-    # Debug for the time being
-    export_holiday_validation_file(settings, holiday_data)
 
 if __name__ == "__main__":
     main()

@@ -134,8 +134,6 @@ def add_image_to_canvas(pdf_canvas, image_path, page_width, page_height):
     pdf_canvas.drawImage(image, x, y, width=new_w, height=new_h)
 
 
-
-
 def export_calendar_pdf(settings):
     """
     Export a full calendar as a compiled PDF (A4 landscape) with art and calendar pages.

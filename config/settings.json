@@ -16,7 +16,7 @@
     "cultural": true
   },
     "include_country_list": {
-    "countries": ["FR", "ES", "DE", "PL", "TR", "RO", "NL", "AT", "AU"]
+    "countries": ["FR", "ES", "DE", "PL", "TR", "RO", "NL", "AT", "IT","GR"]
   },
   "merge_identical_holidays": true,
   "art_files": {
@@ -93,7 +93,7 @@
     "branding": {
     "show_branding": true,
     "show_page_numbers": true,
-    "branding_text": "Generated with Calendar Compiler V0.1",
+    "branding_text": "Generated with Calendar Compiler V0.2",
     "branding_url": "https://github.com/muckypaws/CalendarCompiler"
   },
 
